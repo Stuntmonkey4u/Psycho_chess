@@ -301,7 +301,35 @@
 4310 REM --------------------------
 4320 REM END OF MOVE: PAWN FROM D2 TO D4
 4330 REM
-4340 REM --- BLACK MOVES (TURN = 2) ---
+4331 REM MOVE: PAWN FROM A2 TO A4
+4332 REM --------------------------
+4333 IF MOVE$ = "PAWN FROM A2 TO A4" AND TURN = 1 AND A2$ = "P" THEN
+4334   REM ACTION: Update board state for Pawn A2 to A4 (White Pawn must be on A2)
+4335   A2$ = " "
+4336   A4$ = "P"
+4337   REM ACTION: Change turn to Black
+4338   TURN = 2
+4339   REM ACTION: Go to screen refresh
+4340   GOTO 3220 : REM REFRESH_SCREEN_AND_LOOP
+4341 END IF
+4342 REM --------------------------
+4343 REM END OF MOVE: PAWN FROM A2 TO A4
+4344 REM
+4345 REM MOVE: PAWN FROM A2 TO A3
+4346 REM --------------------------
+4347 IF MOVE$ = "PAWN FROM A2 TO A3" AND TURN = 1 AND A2$ = "P" THEN
+4348   REM ACTION: Update board state for Pawn A2 to A3 (White Pawn must be on A2)
+4349   A2$ = " "
+4350   A3$ = "P"
+4351   REM ACTION: Change turn to Black
+4352   TURN = 2
+4353   REM ACTION: Go to screen refresh
+4354   GOTO 3220 : REM REFRESH_SCREEN_AND_LOOP
+4355 END IF
+4356 REM --------------------------
+4357 REM END OF MOVE: PAWN FROM A2 TO A3
+4358 REM
+4359 REM --- BLACK MOVES (TURN = 2) ---
 4350 REM
 4360 REM MOVE: PAWN FROM E7 TO E5
 4370 REM --------------------------
@@ -317,7 +345,35 @@
 4470 REM --------------------------
 4480 REM END OF MOVE: PAWN FROM E7 TO E5
 4490 REM
-4500 REM (MORE MOVES WILL BE ADDED HERE)
+4491 REM MOVE: PAWN FROM H7 TO H5
+4492 REM --------------------------
+4493 IF MOVE$ = "PAWN FROM H7 TO H5" AND TURN = 2 AND H7$ = "p" THEN
+4494   REM ACTION: Update board state for Pawn H7 to H5 (Black Pawn must be on H7)
+4495   H7$ = " "
+4496   H5$ = "p"
+4497   REM ACTION: Change turn to White
+4498   TURN = 1
+4499   REM ACTION: Go to screen refresh
+4500   GOTO 3220 : REM REFRESH_SCREEN_AND_LOOP
+4501 END IF
+4502 REM --------------------------
+4503 REM END OF MOVE: PAWN FROM H7 TO H5
+4504 REM
+4505 REM MOVE: PAWN FROM H7 TO H6
+4506 REM --------------------------
+4507 IF MOVE$ = "PAWN FROM H7 TO H6" AND TURN = 2 AND H7$ = "p" THEN
+4508   REM ACTION: Update board state for Pawn H7 to H6 (Black Pawn must be on H7)
+4509   H7$ = " "
+4510   H6$ = "p"
+4511   REM ACTION: Change turn to White
+4512   TURN = 1
+4513   REM ACTION: Go to screen refresh
+4514   GOTO 3220 : REM REFRESH_SCREEN_AND_LOOP
+4515 END IF
+4516 REM --------------------------
+4517 REM END OF MOVE: PAWN FROM H7 TO H6
+4518 REM
+4519 REM (MORE MOVES WILL BE ADDED HERE)
 4510 REM
 4520 REM IF NO MOVE MATCHED, GO BACK TO INPUT PROMPT
 4530 GOTO 3180 : REM INPUT_RETURN_POINT
