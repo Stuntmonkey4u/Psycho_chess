@@ -275,8 +275,8 @@
 4050 REM
 4060 REM MOVE: PAWN FROM E2 TO E4
 4070 REM --------------------------
-4080 IF MOVE$ = "PAWN FROM E2 TO E4" AND TURN = 1 THEN
-4090   REM ACTION: Update board state for Pawn E2 to E4
+4080 IF MOVE$ = "PAWN FROM E2 TO E4" AND TURN = 1 AND E2$ = "P" THEN
+4090   REM ACTION: Update board state for Pawn E2 to E4 (White Pawn must be on E2)
 4100   E2$ = " "
 4110   E4$ = "P"
 4120   REM ACTION: Change turn to Black
@@ -289,8 +289,8 @@
 4190 REM
 4200 REM MOVE: PAWN FROM D2 TO D4
 4210 REM --------------------------
-4220 IF MOVE$ = "PAWN FROM D2 TO D4" AND TURN = 1 THEN
-4230   REM ACTION: Update board state for Pawn D2 to D4
+4220 IF MOVE$ = "PAWN FROM D2 TO D4" AND TURN = 1 AND D2$ = "P" THEN
+4230   REM ACTION: Update board state for Pawn D2 to D4 (White Pawn must be on D2)
 4240   D2$ = " "
 4250   D4$ = "P"
 4260   REM ACTION: Change turn to Black
@@ -305,8 +305,8 @@
 4350 REM
 4360 REM MOVE: PAWN FROM E7 TO E5
 4370 REM --------------------------
-4380 IF MOVE$ = "PAWN FROM E7 TO E5" AND TURN = 2 THEN
-4390   REM ACTION: Update board state for Pawn E7 to E5
+4380 IF MOVE$ = "PAWN FROM E7 TO E5" AND TURN = 2 AND E7$ = "p" THEN
+4390   REM ACTION: Update board state for Pawn E7 to E5 (Black Pawn must be on E7)
 4400   E7$ = " "
 4410   E5$ = "p"
 4420   REM ACTION: Change turn to White
