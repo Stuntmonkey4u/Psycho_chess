@@ -541,10 +541,150 @@
 4544 REM --------------------------
 4545 REM END OF MOVE: PAWN FROM A7 TO A6
 4546 REM
-4547 REM (MORE MOVES WILL BE ADDED HERE)
-4548 REM
-4549 REM IF NO MOVE MATCHED, GO BACK TO INPUT PROMPT
-4550 GOTO 3180 : REM INPUT_RETURN_POINT
-4551 REM
-4552 REM END OF MOVE EVALUATION
-4553 REM ------------------------
+4547 REM MOVE: PAWN FROM B7 TO B5
+4548 REM --------------------------
+4549 IF MOVE$ = "PAWN FROM B7 TO B5" AND TURN = 2 AND B7$ = "p" THEN
+4550   REM ACTION: Update board state for Pawn B7 to B5 (Black Pawn must be on B7)
+4551   B7$ = " "
+4552   B5$ = "p"
+4553   REM ACTION: Change turn to White
+4554   TURN = 1
+4555   REM ACTION: Go to screen refresh
+4556   GOTO 3220 : REM REFRESH_SCREEN_AND_LOOP
+4557 END IF
+4558 REM --------------------------
+4559 REM END OF MOVE: PAWN FROM B7 TO B5
+4560 REM
+4561 REM MOVE: PAWN FROM B7 TO B6
+4562 REM --------------------------
+4563 IF MOVE$ = "PAWN FROM B7 TO B6" AND TURN = 2 AND B7$ = "p" THEN
+4564   REM ACTION: Update board state for Pawn B7 to B6 (Black Pawn must be on B7)
+4565   B7$ = " "
+4566   B6$ = "p"
+4567   REM ACTION: Change turn to White
+4568   TURN = 1
+4569   REM ACTION: Go to screen refresh
+4570   GOTO 3220 : REM REFRESH_SCREEN_AND_LOOP
+4571 END IF
+4572 REM --------------------------
+4573 REM END OF MOVE: PAWN FROM B7 TO B6
+4574 REM
+4575 REM MOVE: PAWN FROM C7 TO C5
+4576 REM --------------------------
+4577 IF MOVE$ = "PAWN FROM C7 TO C5" AND TURN = 2 AND C7$ = "p" THEN
+4578   REM ACTION: Update board state for Pawn C7 to C5 (Black Pawn must be on C7)
+4579   C7$ = " "
+4580   C5$ = "p"
+4581   REM ACTION: Change turn to White
+4582   TURN = 1
+4583   REM ACTION: Go to screen refresh
+4584   GOTO 3220 : REM REFRESH_SCREEN_AND_LOOP
+4585 END IF
+4586 REM --------------------------
+4587 REM END OF MOVE: PAWN FROM C7 TO C5
+4588 REM
+4589 REM MOVE: PAWN FROM C7 TO C6
+4590 REM --------------------------
+4591 IF MOVE$ = "PAWN FROM C7 TO C6" AND TURN = 2 AND C7$ = "p" THEN
+4592   REM ACTION: Update board state for Pawn C7 to C6 (Black Pawn must be on C7)
+4593   C7$ = " "
+4594   C6$ = "p"
+4595   REM ACTION: Change turn to White
+4596   TURN = 1
+4597   REM ACTION: Go to screen refresh
+4598   GOTO 3220 : REM REFRESH_SCREEN_AND_LOOP
+4599 END IF
+4600 REM --------------------------
+4601 REM END OF MOVE: PAWN FROM C7 TO C6
+4602 REM
+4603 REM MOVE: PAWN FROM D7 TO D5
+4604 REM --------------------------
+4605 IF MOVE$ = "PAWN FROM D7 TO D5" AND TURN = 2 AND D7$ = "p" THEN
+4606   REM ACTION: Update board state for Pawn D7 to D5 (Black Pawn must be on D7)
+4607   D7$ = " "
+4608   D5$ = "p"
+4609   REM ACTION: Change turn to White
+4610   TURN = 1
+4611   REM ACTION: Go to screen refresh
+4612   GOTO 3220 : REM REFRESH_SCREEN_AND_LOOP
+4613 END IF
+4614 REM --------------------------
+4615 REM END OF MOVE: PAWN FROM D7 TO D5
+4616 REM
+4617 REM MOVE: PAWN FROM D7 TO D6
+4618 REM --------------------------
+4619 IF MOVE$ = "PAWN FROM D7 TO D6" AND TURN = 2 AND D7$ = "p" THEN
+4620   REM ACTION: Update board state for Pawn D7 to D6 (Black Pawn must be on D7)
+4621   D7$ = " "
+4622   D6$ = "p"
+4623   REM ACTION: Change turn to White
+4624   TURN = 1
+4625   REM ACTION: Go to screen refresh
+4626   GOTO 3220 : REM REFRESH_SCREEN_AND_LOOP
+4627 END IF
+4628 REM --------------------------
+4629 REM END OF MOVE: PAWN FROM D7 TO D6
+4630 REM
+4631 REM MOVE: PAWN FROM F7 TO F5
+4632 REM --------------------------
+4633 IF MOVE$ = "PAWN FROM F7 TO F5" AND TURN = 2 AND F7$ = "p" THEN
+4634   REM ACTION: Update board state for Pawn F7 to F5 (Black Pawn must be on F7)
+4635   F7$ = " "
+4636   F5$ = "p"
+4637   REM ACTION: Change turn to White
+4638   TURN = 1
+4639   REM ACTION: Go to screen refresh
+4640   GOTO 3220 : REM REFRESH_SCREEN_AND_LOOP
+4641 END IF
+4642 REM --------------------------
+4643 REM END OF MOVE: PAWN FROM F7 TO F5
+4644 REM
+4645 REM MOVE: PAWN FROM F7 TO F6
+4646 REM --------------------------
+4647 IF MOVE$ = "PAWN FROM F7 TO F6" AND TURN = 2 AND F7$ = "p" THEN
+4648   REM ACTION: Update board state for Pawn F7 to F6 (Black Pawn must be on F7)
+4649   F7$ = " "
+4650   F6$ = "p"
+4651   REM ACTION: Change turn to White
+4652   TURN = 1
+4653   REM ACTION: Go to screen refresh
+4654   GOTO 3220 : REM REFRESH_SCREEN_AND_LOOP
+4655 END IF
+4656 REM --------------------------
+4657 REM END OF MOVE: PAWN FROM F7 TO F6
+4658 REM
+4659 REM MOVE: PAWN FROM G7 TO G5
+4660 REM --------------------------
+4661 IF MOVE$ = "PAWN FROM G7 TO G5" AND TURN = 2 AND G7$ = "p" THEN
+4662   REM ACTION: Update board state for Pawn G7 to G5 (Black Pawn must be on G7)
+4663   G7$ = " "
+4664   G5$ = "p"
+4665   REM ACTION: Change turn to White
+4666   TURN = 1
+4667   REM ACTION: Go to screen refresh
+4668   GOTO 3220 : REM REFRESH_SCREEN_AND_LOOP
+4669 END IF
+4670 REM --------------------------
+4671 REM END OF MOVE: PAWN FROM G7 TO G5
+4672 REM
+4673 REM MOVE: PAWN FROM G7 TO G6
+4674 REM --------------------------
+4675 IF MOVE$ = "PAWN FROM G7 TO G6" AND TURN = 2 AND G7$ = "p" THEN
+4676   REM ACTION: Update board state for Pawn G7 to G6 (Black Pawn must be on G7)
+4677   G7$ = " "
+4678   G6$ = "p"
+4679   REM ACTION: Change turn to White
+4680   TURN = 1
+4681   REM ACTION: Go to screen refresh
+4682   GOTO 3220 : REM REFRESH_SCREEN_AND_LOOP
+4683 END IF
+4684 REM --------------------------
+4685 REM END OF MOVE: PAWN FROM G7 TO G6
+4686 REM
+4687 REM (MORE MOVES WILL BE ADDED HERE)
+4688 REM
+4689 REM IF NO MOVE MATCHED, GO BACK TO INPUT PROMPT
+4690 GOTO 3180 : REM INPUT_RETURN_POINT
+4691 REM
+4692 REM END OF MOVE EVALUATION
+4693 REM ------------------------
