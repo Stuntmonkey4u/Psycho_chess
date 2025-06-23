@@ -469,7 +469,65 @@
 4496 REM --------------------------
 4497 REM END OF MOVE: PAWN FROM H2 TO H3
 4498 REM
-4499 REM --- BLACK MOVES (TURN = 2) ---
+4499 REM --- WHITE KNIGHT MOVES ---
+4500 REM
+4501 REM MOVE: KNIGHT FROM G1 TO F3
+4502 REM ---------------------------
+4503 IF MOVE$ = "KNIGHT FROM G1 TO F3" AND TURN = 1 AND G1$ = "N" THEN
+4504   REM ACTION: Update board state for Knight G1 to F3 (White Knight must be on G1)
+4505   G1$ = " "
+4506   F3$ = "N"
+4507   REM ACTION: Change turn to Black
+4508   TURN = 2
+4509   REM ACTION: Go to screen refresh
+4510   GOTO 3220 : REM REFRESH_SCREEN_AND_LOOP
+4511 END IF
+4512 REM ---------------------------
+4513 REM END OF MOVE: KNIGHT FROM G1 TO F3
+4514 REM
+4515 REM MOVE: KNIGHT FROM G1 TO H3
+4516 REM ---------------------------
+4517 IF MOVE$ = "KNIGHT FROM G1 TO H3" AND TURN = 1 AND G1$ = "N" THEN
+4518   REM ACTION: Update board state for Knight G1 to H3 (White Knight must be on G1)
+4519   G1$ = " "
+4520   H3$ = "N"
+4521   REM ACTION: Change turn to Black
+4522   TURN = 2
+4523   REM ACTION: Go to screen refresh
+4524   GOTO 3220 : REM REFRESH_SCREEN_AND_LOOP
+4525 END IF
+4526 REM ---------------------------
+4527 REM END OF MOVE: KNIGHT FROM G1 TO H3
+4528 REM
+4529 REM MOVE: KNIGHT FROM B1 TO A3
+4530 REM ---------------------------
+4531 IF MOVE$ = "KNIGHT FROM B1 TO A3" AND TURN = 1 AND B1$ = "N" THEN
+4532   REM ACTION: Update board state for Knight B1 to A3 (White Knight must be on B1)
+4533   B1$ = " "
+4534   A3$ = "N"
+4535   REM ACTION: Change turn to Black
+4536   TURN = 2
+4537   REM ACTION: Go to screen refresh
+4538   GOTO 3220 : REM REFRESH_SCREEN_AND_LOOP
+4539 END IF
+4540 REM ---------------------------
+4541 REM END OF MOVE: KNIGHT FROM B1 TO A3
+4542 REM
+4543 REM MOVE: KNIGHT FROM B1 TO C3
+4544 REM ---------------------------
+4545 IF MOVE$ = "KNIGHT FROM B1 TO C3" AND TURN = 1 AND B1$ = "N" THEN
+4546   REM ACTION: Update board state for Knight B1 to C3 (White Knight must be on B1)
+4547   B1$ = " "
+4548   C3$ = "N"
+4549   REM ACTION: Change turn to Black
+4550   TURN = 2
+4551   REM ACTION: Go to screen refresh
+4552   GOTO 3220 : REM REFRESH_SCREEN_AND_LOOP
+4553 END IF
+4554 REM ---------------------------
+4555 REM END OF MOVE: KNIGHT FROM B1 TO C3
+4556 REM
+4557 REM --- BLACK MOVES (TURN = 2) ---
 4350 REM
 4360 REM MOVE: PAWN FROM E7 TO E5
 4370 REM --------------------------
@@ -681,10 +739,68 @@
 4684 REM --------------------------
 4685 REM END OF MOVE: PAWN FROM G7 TO G6
 4686 REM
-4687 REM (MORE MOVES WILL BE ADDED HERE)
+4687 REM --- BLACK KNIGHT MOVES ---
 4688 REM
-4689 REM IF NO MOVE MATCHED, GO BACK TO INPUT PROMPT
-4690 GOTO 3180 : REM INPUT_RETURN_POINT
-4691 REM
-4692 REM END OF MOVE EVALUATION
-4693 REM ------------------------
+4689 REM MOVE: KNIGHT FROM G8 TO F6
+4690 REM ---------------------------
+4691 IF MOVE$ = "KNIGHT FROM G8 TO F6" AND TURN = 2 AND G8$ = "n" THEN
+4692   REM ACTION: Update board state for Knight G8 to F6 (Black Knight must be on G8)
+4693   G8$ = " "
+4694   F6$ = "n"
+4695   REM ACTION: Change turn to White
+4696   TURN = 1
+4697   REM ACTION: Go to screen refresh
+4698   GOTO 3220 : REM REFRESH_SCREEN_AND_LOOP
+4699 END IF
+4700 REM ---------------------------
+4701 REM END OF MOVE: KNIGHT FROM G8 TO F6
+4702 REM
+4703 REM MOVE: KNIGHT FROM G8 TO H6
+4704 REM ---------------------------
+4705 IF MOVE$ = "KNIGHT FROM G8 TO H6" AND TURN = 2 AND G8$ = "n" THEN
+4706   REM ACTION: Update board state for Knight G8 to H6 (Black Knight must be on G8)
+4707   G8$ = " "
+4708   H6$ = "n"
+4709   REM ACTION: Change turn to White
+4710   TURN = 1
+4711   REM ACTION: Go to screen refresh
+4712   GOTO 3220 : REM REFRESH_SCREEN_AND_LOOP
+4713 END IF
+4714 REM ---------------------------
+4715 REM END OF MOVE: KNIGHT FROM G8 TO H6
+4716 REM
+4717 REM MOVE: KNIGHT FROM B8 TO A6
+4718 REM ---------------------------
+4719 IF MOVE$ = "KNIGHT FROM B8 TO A6" AND TURN = 2 AND B8$ = "n" THEN
+4720   REM ACTION: Update board state for Knight B8 to A6 (Black Knight must be on B8)
+4721   B8$ = " "
+4722   A6$ = "n"
+4723   REM ACTION: Change turn to White
+4724   TURN = 1
+4725   REM ACTION: Go to screen refresh
+4726   GOTO 3220 : REM REFRESH_SCREEN_AND_LOOP
+4727 END IF
+4728 REM ---------------------------
+4729 REM END OF MOVE: KNIGHT FROM B8 TO A6
+4730 REM
+4731 REM MOVE: KNIGHT FROM B8 TO C6
+4732 REM ---------------------------
+4733 IF MOVE$ = "KNIGHT FROM B8 TO C6" AND TURN = 2 AND B8$ = "n" THEN
+4734   REM ACTION: Update board state for Knight B8 to C6 (Black Knight must be on B8)
+4735   B8$ = " "
+4736   C6$ = "n"
+4737   REM ACTION: Change turn to White
+4738   TURN = 1
+4739   REM ACTION: Go to screen refresh
+4740   GOTO 3220 : REM REFRESH_SCREEN_AND_LOOP
+4741 END IF
+4742 REM ---------------------------
+4743 REM END OF MOVE: KNIGHT FROM B8 TO C6
+4744 REM
+4745 REM (MORE MOVES WILL BE ADDED HERE)
+4746 REM
+4747 REM IF NO MOVE MATCHED, GO BACK TO INPUT PROMPT
+4748 GOTO 3180 : REM INPUT_RETURN_POINT
+4749 REM
+4750 REM END OF MOVE EVALUATION
+4751 REM ------------------------
